@@ -1,13 +1,13 @@
 import express from "express";
 import { succes } from "./helper.js";
-import Pokemon from "./mock-pokemon.js";
+import PokemonArray from "./mock-pokemon.js";
 import morgan from "morgan";
 import { getUniqueId } from "./helper.js";
 import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-
+let Pokemon = PokemonArray;
 app.use(morgan("dev")).use(bodyParser.json());
 
 app.get("/", (req, res) => res.send("hello"));

@@ -1,4 +1,4 @@
-const pokemons = [
+let pokemons = [
   {
     id: 1,
     name: "Bulbizarre",
